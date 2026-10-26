@@ -1,0 +1,111 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Little Surprise ❤️</title>
+<style>
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg,#ffe0ed,#fff7fb);
+  font-family: Arial, sans-serif;
+  color: #96365c;
+  text-align: center;
+  padding: 16px;
+  box-sizing: border-box;
+}
+.card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 28px;
+  max-width: 400px;
+  box-shadow: 0 10px 35px #e754862b;
+}
+.heart { font-size: 55px; }
+h1 { color: #c13f72; }
+button {
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+}
+#open {
+  background: #e75486;
+  color: white;
+  padding: 14px 24px;
+  font-size: 17px;
+}
+#question { display: none; }
+#yes {
+  background: #e75486;
+  color: white;
+  padding: 22px 40px;
+  font-size: 25px;
+  font-weight: bold;
+  box-shadow: 0 6px 18px #e7548655;
+}
+#later {
+  background: #fff0f6;
+  color: #96365c;
+  padding: 4px 7px;
+  font-size: 9px;
+  margin-left: 10px;
+}
+#reply { margin-top: 22px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <section id="intro">
+    <div class="heart">💗</div>
+    <p>A tiny surprise, just for you...</p>
+    <h1>Hey, my favorite person ✨</h1>
+    <p>I have a little question for you, my love.</p>
+    <button id="open" onclick="showQuestion()">
+      Open your surprise ♡
+    </button>
+  </section>
+
+  <section id="question">
+    <div class="heart">🌷</div>
+    <h1>My Love ❤️</h1>
+    <p style="font-size:21px;font-weight:bold">
+      Can I take you to a nature walk in Bluepost Hotel this weekend, my love ❤️?
+    </p>
+    <p>You make ordinary moments special. 💌</p>
+    <button id="yes" onclick="answerYes()">YES! 😄🎉</button>
+    <button id="later" onclick="answerLater()">Maybe later 😢</button>
+    <p id="reply"></p>
+  </section>
+  <p>Made with love ♡</p>
+</div>
+
+<script>
+function showQuestion() {
+  document.getElementById("intro").style.display = "none";
+  document.getElementById("question").style.display = "block";
+}
+function answerYes() {
+  document.getElementById("reply").textContent =
+    "Yaaay! 😍❤️ I can't wait to spend this special time with you!";
+}
+function answerLater() {
+  document.getElementById("reply").textContent =
+    "No worries, my love ❤️ Take your time. 😊";
+}
+</script>
+</body>
+</html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pen</title>
+  </head>
+  <body>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
